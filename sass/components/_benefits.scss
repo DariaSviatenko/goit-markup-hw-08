@@ -1,0 +1,39 @@
+.benefits-list {
+    @include centeredFlex(flex);
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  
+    &__item {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      padding-bottom: 0;
+    }
+  }
+  
+  .benefits-icons {
+    background-color: $primary-section-background-color;
+    border-radius: $border-radius;
+  
+    &__image {
+      width: 70px;
+      height: 70px;
+      margin: 25px 100px;
+    }
+    
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: $primary-color;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    
+    &__description {
+      line-height: 1.71;
+      color: $paragraph-color;
+    }
+  }

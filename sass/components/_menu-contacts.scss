@@ -1,0 +1,41 @@
+.menu-contacts {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+
+  &__item {
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  &__item:first-child {
+    margin-left: 0;
+  }
+
+  &__link {
+    @include centeredFlex(flex);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $paragraph-color;
+    text-decoration: none;
+    transition: $transition-color;
+
+    &:hover svg,
+    &:focus svg {
+      fill: $accent-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: $paragraph-color;
+    cursor: pointer;
+    transition: $transition-fill;
+  }
+}

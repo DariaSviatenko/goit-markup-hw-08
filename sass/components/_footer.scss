@@ -1,0 +1,146 @@
+.footer {
+  background-color: $section-background-color;
+  padding: 60px 0;
+
+  &-container {
+    @include centeredFlex(flex);
+    align-items: baseline;
+  }
+
+  &-content {
+    padding-top: calc(60px - 94px);
+    padding-bottom: calc(60px - 94px);
+  }
+
+  &-contacts {
+    font-style: normal;
+    margin: 20px 0 0 0;
+
+    &__list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &-address {
+    line-height: 1.71;
+    color: $secondory-color;
+  }
+
+  &-contact__link {
+    line-height: 1.71;
+    color: $footer-color;
+    text-decoration: none;
+  }
+
+  &-social-network {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 70px;
+
+    &__name {
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: $secondory-color;
+      transition: $transition-fill;
+    }
+
+    &__list {
+      @include centeredFlex(flex);
+    }
+
+    &__item {
+      display: inline-block;
+      list-style: none;
+      fill: $paragraph-color;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      border: none;
+      margin-right: 10px;
+      padding: 0;
+    }
+
+    &__link {
+      @include centeredFlex(flex);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      transition: $transition-background-color;
+
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+      }
+
+      &:hover svg,
+      &:focus svg {
+        fill: $secondory-color;
+      }
+    }
+  }
+
+  &-form {
+    display: inline-block;
+    margin-left: auto;
+
+    &__name {
+      font-weight: 700;
+      line-height: 16px;
+      padding-top: 0;
+      margin-bottom: 20px;
+      color: $secondory-color;
+    }
+
+    &__field {
+      @include centeredFlex(flex);
+    }
+
+    &__field input {
+      width: 358px;
+      height: 50px;
+      background-color: $section-background-color;
+      border: $footer-border;
+      border-radius: $border-radius;
+      padding-left: 16px;
+      margin-right: 12px;
+      color: $secondory-color;
+    }
+
+    &__field input::placeholder {
+      color: $footer-color;
+    }
+  }
+
+  &-email {
+    display: inline-flex;
+    color: $secondory-color;
+    background-color: $accent-color;
+    border-radius: $border-radius;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    border: $footer-border;
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px 10px 29px;
+    transition: $transition-box-shadow;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+
+    &__icon {
+      fill: $secondory-color;
+      margin-left: 10px;
+      transition: $transition-fill;
+    }
+  }
+}

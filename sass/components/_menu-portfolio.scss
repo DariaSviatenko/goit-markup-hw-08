@@ -1,0 +1,34 @@
+.menu-portfolio {
+  @include centeredFlex(flex);
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+
+  &__item {
+    list-style: none;
+    flex-direction: column;
+  }
+}
+
+.button-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: $primary-color;
+  border: 0;
+  cursor: pointer;
+  align-items: center;
+  padding: 6px 22px;
+  border-radius: $border-radius;
+  transition: $transition-color, $transition-background-color,
+    filter 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $secondory-color;
+    background-color: $accent-color;
+    filter: $filter;
+  }
+}

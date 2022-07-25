@@ -1,0 +1,43 @@
+.clients-list {
+    @include centeredFlex(flex);
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .clients-item {
+    @include centeredFlex(flex);
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: 0;
+    width: 170px;
+    height: 92px;
+  }
+  
+  .clients-link {
+    @include centeredFlex(flex);
+    border: 1px solid $color;
+    border-radius: $border-radius;
+    width: 100%;
+    height: 100%;
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+  
+    &:hover svg,
+    &:focus svg {
+      fill: $accent-color;
+    }
+  }
+  
+  .clients-name {
+    fill: $color;
+    transition: $transition-fill;
+  }

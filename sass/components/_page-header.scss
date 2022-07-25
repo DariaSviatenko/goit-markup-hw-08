@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  padding: 24px 0 25px 0;
+
+  & .container {
+    @include centeredFlex(flex);
+  }
+
+  .navigation {
+    @include centeredFlex(flex);
+  }
+}
