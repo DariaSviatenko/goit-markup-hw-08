@@ -1,12 +1,14 @@
 .header {
   border-bottom: 1px solid #ececec;
   padding: 24px 0 25px 0;
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+    height: 60px;
+  }
 
   & .container {
     @include centeredFlex(flex);
   }
-
- 
 
   .navigation {
     @include centeredFlex(flex);
