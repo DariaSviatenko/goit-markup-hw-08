@@ -21,9 +21,31 @@
           <a class="logo" href="/"
             >Web<span class="logo__header">Studio</span></a
           >
+          <button
+            class="header__button is-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-contaier"
+            data-header__button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./images/mobile.svg#icon-close"
+              ></use>
+              <use class="icon-menu" href="./images/mobile.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-contaier is-open" id="menu-contaier" data-menu>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link menu__link--current" href="./index.html">Студия</a>
+              <a class="menu__link menu__link--current" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="menu__item">
               <a class="menu__link" href="./portfolio">Портфолио</a>
@@ -51,6 +73,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </div>
     </header>
 
@@ -191,9 +214,7 @@
           <div class="label">
             <ul class="subtitle-list">
               <li class="subtitle-list__item">
-                <p class="occupation-label">
-                  ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ
-                </p>
+                <p class="occupation-label">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                 <img
                   class="occupation-photo"
                   src="./images/development.jpg"
@@ -203,9 +224,7 @@
                 />
               </li>
               <li class="subtitle-list__item">
-                <p class="occupation-label">
-                  МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
-                </p>
+                <p class="occupation-label">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 <img
                   class="occupation-photo"
                   src="./images/formatting.jpg"
@@ -215,9 +234,7 @@
                 />
               </li>
               <li class="subtitle-list__item">
-                <p class="occupation-label">
-                  ДИЗАЙНЕРСКИЕ РЕШЕНИЯ
-                </p>
+                <p class="occupation-label">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 <img
                   class="occupation-photo"
                   src="./images/design.jpg"
@@ -464,7 +481,10 @@
                 <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
               <li class="footer-contacts__item">
-                <a class="footer-contact__link" href="mailto:info@devstudio.com">
+                <a
+                  class="footer-contact__link"
+                  href="mailto:info@devstudio.com"
+                >
                   info@example.com
                 </a>
               </li>
@@ -530,5 +550,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

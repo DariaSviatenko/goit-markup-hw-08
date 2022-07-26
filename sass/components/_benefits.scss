@@ -1,12 +1,18 @@
 .benefits-list {
     @include centeredFlex(flex);
-    // gap: 30px;
+    gap: 30px;
     margin: 0;
     padding: 0;
     @media screen and (min-width: $tablet) {
-      @include centeredFlex(flex);
       width: 768px;
-      flex-wrap: wrap;
+      margin: -5px;
+      // flex-wrap: wrap;
+      // gap: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 1200px;
+      
     }
   
     &__item {
@@ -14,13 +20,19 @@
       padding-left: 0;
       margin: 0;
       padding-bottom: 0;
-      @media screen and (min-width: $tablet) {
-        width: 50%;
-        @include centeredFlex(flex);
-      }
+    
+    @media screen and (min-width: $tablet) {
+      width: 50%;
+      width: calc((100% - 2 * 10px) / 2) ;
+      margin: 5px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      // width: 100%;
     }
   }
-  
+}
+
   .benefits-icons {
     background-color: $primary-section-background-color;
     border-radius: $border-radius;

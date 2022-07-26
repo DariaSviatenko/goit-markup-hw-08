@@ -1,7 +1,13 @@
 section.description {
     padding-top: 0;
   }
-  
+
+  .description {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
   .subtitle {
     font-weight: 700;
     font-size: 36px;

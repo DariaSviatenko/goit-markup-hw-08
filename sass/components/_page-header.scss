@@ -1,10 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
   padding: 24px 0 25px 0;
-  @media screen and (min-width: $mobile) {
-    width: 480px;
-    height: 60px;
-  }
+  position: relative;
 
   & .container {
     @include centeredFlex(flex);
@@ -12,5 +9,39 @@
 
   .navigation {
     @include centeredFlex(flex);
+    
   }
+
+  &__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    .icon-close {
+      display: none;
+    }
+
+    &.is-open .icon-close {
+      display: block;
+    }
+
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
+}
+
+.menu-contaier {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  &.is-open{
+    display: block;
+  }
+
 }
