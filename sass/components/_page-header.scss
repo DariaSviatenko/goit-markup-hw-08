@@ -19,6 +19,10 @@
     border: none;
     background-color: transparent;
 
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
     .icon-close {
       display: none;
     }
@@ -34,8 +38,12 @@
 }
 
 .menu-contaier {
-  display: none;
-  position: absolute;
+  
+
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
@@ -43,5 +51,11 @@
   &.is-open{
     display: block;
   }
+  }
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // justify-content: ;
+    // flex-grow: 1;
+  }
 }
