@@ -1,15 +1,35 @@
 .header {
   border-bottom: 1px solid #ececec;
-  padding: 24px 0 25px 0;
+  padding: 10px 0 9px;
   position: relative;
 
+  @media screen and (min-width: $tablet) {
+    padding: 21px 0 21px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 24px 0 25px;
+  }
+
   & .container {
-    @include centeredFlex(flex);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: $tablet) {
+      // @include centeredFlex(flex);
+      justify-content: space-between;
+    }
   }
 
   .navigation {
     @include centeredFlex(flex);
-    
+    display: none;
+    @media screen and (min-width: $tablet) {
+      flex: 1;
+      display: flex;
+    }
+    @media screen and (min-width: $desktop) {
+      flex: 0;
+    }
   }
 
   &__button {
@@ -37,25 +57,26 @@
   }
 }
 
-.menu-contaier {
-  
-
-
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-  top: 100%;
+.menu-mobile-container {
+  background-color: $secondory-color;
+  // @media screen and (max-width: 767px) {
+  display: none;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-
-  &.is-open{
+  height: 100%;
+  &.is-open {
     display: block;
   }
-  }
+  // }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    // justify-content: ;
-    // flex-grow: 1;
+  // @media screen and (min-width: 768px) {
+  // display: flex;
+  // justify-content: ;
+  // flex-grow: 1;
+  // }
+  & .menu-contacts {
+    display: block;
   }
 }

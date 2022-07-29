@@ -1,48 +1,58 @@
 body {
-    background-color: $secondory-color;
-    color: $primary-color;
-    font-family: $font-primary;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+  background-color: $secondory-color;
+  color: $primary-color;
+  font-family: $font-primary;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  // overflow: hidden;
+
+  // width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
   }
-  
-  * {
-    box-sizing: border-box;
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
   }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
+
+  @media screen and (min-width: $desktop) {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    @media screen and (min-width: $mobile) {
-      width: 480px;
-    }
-
-    @media screen and (min-width: $tablet) {
-      width: 768px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 1200px;
-    }
-
   }
-  
-  .section {
+}
+
+.section {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
-  
-  h1,
-  h2,
-  h3,
-  p {
-    margin: 0;
-  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}

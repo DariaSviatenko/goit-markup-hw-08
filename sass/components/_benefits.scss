@@ -1,60 +1,71 @@
 .benefits-list {
-    @include centeredFlex(flex);
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // @include centeredFlex(flex);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  // @media screen and (min-width: $tablet) {
+  //   width: 768px;
+  //   margin: -5px;
+  //   // flex-wrap: wrap;
+  //   // gap: 0;
+  // }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+
+  &__item {
+    list-style: none;
+    padding-left: 0;
     margin: 0;
-    padding: 0;
+    padding-bottom: 0;
+    text-align: center;
+
     @media screen and (min-width: $tablet) {
-      width: 768px;
-      margin: -5px;
-      // flex-wrap: wrap;
-      // gap: 0;
+      width: calc(50% - 15px);
     }
 
     @media screen and (min-width: $desktop) {
-      width: 1200px;
-      
-    }
-  
-    &__item {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-      padding-bottom: 0;
-    
-    @media screen and (min-width: $tablet) {
-      width: 50%;
-      width: calc((100% - 2 * 10px) / 2) ;
-      margin: 5px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      // width: 100%;
+      width: calc(25% - 30px);
     }
   }
 }
 
-  .benefits-icons {
-    background-color: $primary-section-background-color;
-    border-radius: $border-radius;
-  
-    &__image {
-      width: 70px;
-      height: 70px;
-      margin: 25px 100px;
-    }
-    
-    &__title {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      text-transform: uppercase;
-      color: $primary-color;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    
-    &__description {
-      line-height: 1.71;
-      color: $paragraph-color;
-    }
+.benefits-icons {
+  background-color: $primary-section-background-color;
+  border-radius: $border-radius;
+  @media screen and (min-width: $tablet) {
+    height: 120px;
   }
+
+  &__image {
+    width: 70px;
+    height: 70px;
+    margin: 25px 100px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    line-height: 1.71;
+    color: $paragraph-color;
+    text-align: left;
+  }
+}
