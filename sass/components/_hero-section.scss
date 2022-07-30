@@ -10,7 +10,7 @@
   background-size: cover;
 
   @media screen and (min-width: $mobile) {
-    background-image: url(./../../images/heroimage.jpg);
+    background-image: url(./images/heroimage.jpg);
     background-size: 480 px 400px;
   }
   @media screen and (min-width: $desktop) {
@@ -20,7 +20,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./../../images/heroimage.jpg);
+      url(./images/heroimage.jpg);
     height: 600px;
   }
 }
@@ -29,7 +29,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url(./../../images/heroimage@2x.jpg);
+    background-image: url(./images/heroimage@2x.jpg);
   }
 }
 
