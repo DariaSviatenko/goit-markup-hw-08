@@ -9,7 +9,11 @@
   }
 
   &__item {
-    max-width: 370px;
+    width: 100%;
+    @media screen and (min-width: $desktop) {
+      max-width: 370px;
+      width: auto;
+    }
   }
 
   &__item div:last-of-type {

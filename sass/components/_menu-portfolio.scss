@@ -1,13 +1,22 @@
 .menu-portfolio {
-  @include centeredFlex(flex);
+  // @include centeredFlex(flex);
+  display: flex;
+  align-items: center;
   gap: 8px;
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
   &__item {
     list-style: none;
-    flex-direction: column;
+    // flex-direction: column;
+    margin-bottom: 7px;
   }
 }
 
