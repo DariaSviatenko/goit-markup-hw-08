@@ -12,5 +12,6 @@
   });
   mobileMenuClose.addEventListener("click", () => {
     mobileMenuRef.classList.remove("is-open");
+    headerBtnRef.classList.remove("is-open");
   });
 })();

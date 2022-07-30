@@ -16,15 +16,6 @@
     max-width: none;
     width: 528px;
   }
-
-  // @media (min-width: 600px) {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   max-width: 528px;
-  //   width: 100%;
-  // }
 }
 
 .backdrop.is-hidden .modal {
@@ -74,7 +65,6 @@
   }
 
   &-field {
-    // @include centeredFlex(flex);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -141,12 +131,12 @@
 }
 .checkbox-form {
   &__label {
-    // @include centeredFlex(flex);
     display: inline-block;
     vertical-align: middle;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.03em;
+    white-space: nowrap;
   }
 
   &__icon {
@@ -157,7 +147,6 @@
     border: 2px solid black;
     border-radius: 2px;
     margin-right: 8px;
-    // margin-left: 10px;
   }
 
   &__box {

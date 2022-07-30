@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // @include centeredFlex(flex);
   gap: 30px;
   margin: 0;
   padding: 0;
@@ -12,12 +11,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  // @media screen and (min-width: $tablet) {
-  //   width: 768px;
-  //   margin: -5px;
-  //   // flex-wrap: wrap;
-  //   // gap: 0;
-  // }
+  
 
   @media screen and (min-width: $desktop) {
     width: 1200px;

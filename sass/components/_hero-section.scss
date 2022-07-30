@@ -9,11 +9,11 @@
   margin-right: auto;
   background-size: cover;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     background-image: url(../../images/heroimage.jpg);
     background-size: 480 px 400px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 200px 0;
     background-image: linear-gradient(
         to right,
@@ -42,11 +42,11 @@
   letter-spacing: 0.06em;
   color: $secondory-color;
   margin: 0 auto 30px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     max-width: 360px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;

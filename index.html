@@ -91,30 +91,41 @@
             <a class="menu__link" href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="menu-contacts">
-          <li class="menu-contacts__item">
-            <a class="menu-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="menu-contacts__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="menu-contacts__item">
-            <a class="menu-contacts__link" href="tel:+380961111111">
-              <svg class="menu-contacts__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-        <ul class="mobile-menu-social-list">
-          <li class="mobile-menu-social-list__item"><a class="mobile-menu-social-list__link" href="#">Instagram</a></li>
-          <li class="mobile-menu-social-list__item"><a class="mobile-menu-social-list__link" href="#">Twitter</a></li>
-          <li class="mobile-menu-social-list__item"><a class="mobile-menu-social-list__link" href="#">Facebook</a></li>
-          <li class="mobile-menu-social-list__item"><a class="mobile-menu-social-list__link" href="#">LinkedIn</a></li>
-        </ul>
+        <div>
+          <ul class="menu-contacts">
+            <li class="menu-contacts__item">
+              <a
+                class="menu-contacts__link menu-contacts__link--phone"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="menu-contacts__item">
+              <a
+                class="menu-contacts__link menu-contacts__link--email"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-social-list">
+            <li class="mobile-menu-social-list__item">
+              <a class="mobile-menu-social-list__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu-social-list__item">
+              <a class="mobile-menu-social-list__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu-social-list__item">
+              <a class="mobile-menu-social-list__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu-social-list__item">
+              <a class="mobile-menu-social-list__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -182,8 +193,8 @@
                       value="agreement"
                     />
                     <span class="checkbox-form__icon"> </span>
-                    Погоджуюся з розсилкою та приймаю&nbsp;
-                    <a class="checkbox-form__link" href="#">Умови договору</a>
+                    Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <a class="checkbox-form__link" href="#">Условия договора</a>
                   </label>
                 </div>
                 <div class="submit-form">
@@ -258,6 +269,10 @@
                 <p class="occupation-label">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                 <img
                   class="occupation-photo"
+                  srcset="
+                    ./images/development.jpg    1x,
+                    ./images/development@2x.jpg 2x
+                  "
                   src="./images/development.jpg"
                   width="370"
                   height="294"
@@ -268,6 +283,10 @@
                 <p class="occupation-label">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 <img
                   class="occupation-photo"
+                  srcset="
+                    ./images/formatting.jpg    1x,
+                    ./images/formatting@2x.jpg 2x
+                  "
                   src="./images/formatting.jpg"
                   width="370"
                   height="294"
@@ -278,6 +297,7 @@
                 <p class="occupation-label">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 <img
                   class="occupation-photo"
+                  srcset="./images/design.jpg 1x, ./images/design@2x.jpg 2x"
                   src="./images/design.jpg"
                   width="370"
                   height="294"
@@ -295,9 +315,8 @@
             <li class="subtitle-list-item">
               <img
                 class="team-photo"
+                srcset="./images/teamcard1.jpg 1x, ./images/teamcard1@2x.jpg 2x"
                 src="./images/teamcard1.jpg"
-                width="270"
-                height="260"
                 alt="Product Designer"
               />
               <h3 class="team-name">Игорь Демьяненко</h3>
@@ -336,9 +355,8 @@
             <li class="subtitle-list-item">
               <img
                 class="team-photo"
+                srcset="./images/teamcard2.jpg 1x, ./images/teamcard2@2x.jpg 2x"
                 src="./images/teamcard2.jpg"
-                width="270"
-                height="260"
                 alt="Frontend Developer"
               />
               <h3 class="team-name">Ольга Репина</h3>
@@ -377,9 +395,8 @@
             <li class="subtitle-list-item">
               <img
                 class="team-photo"
+                srcset="./images/teamcard3.jpg 1x, ./images/teamcard3@2x.jpg 2x"
                 src="./images/teamcard3.jpg"
-                width="270"
-                height="260"
                 alt="Marketing"
               />
               <h3 class="team-name">Николай Тарасов</h3>
@@ -418,9 +435,8 @@
             <li class="subtitle-list-item">
               <img
                 class="team-photo"
+                srcset="./images/teamcard4.jpg 1x, ./images/teamcard4@2x.jpg 2x"
                 src="./images/teamcard4.jpg"
-                width="270"
-                height="260"
                 alt="UI Designer"
               />
               <h3 class="team-name">Михаил Ермаков</h3>

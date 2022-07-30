@@ -374,12 +374,34 @@ p {
   width: 100%;
   height: 100%;
   z-index: 3;
+  padding: 48px 40px;
 }
 .menu-mobile-container.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .menu-mobile-container.is-open {
+    display: none;
+  }
 }
 .menu-mobile-container .menu-contacts {
   display: block;
+}
+.menu-mobile-container button {
+  background: #ffffff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
+}
+.menu-mobile-container button:hover svg, .menu-mobile-container button:focus svg {
+  fill: #2196f3;
 }
 .menu-mobile-container .menu {
   display: flex;
@@ -407,6 +429,31 @@ p {
   text-decoration: none;
   display: block;
   padding: 5px 10px;
+}
+.menu-mobile-container .menu-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.menu-mobile-container .menu-contacts__item {
+  margin-left: 0;
+}
+.menu-mobile-container .menu-contacts__link {
+  display: inline-block;
+}
+.menu-mobile-container .menu-contacts__link--phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+.menu-mobile-container .menu-contacts__link--email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
 }
 
 .logo {
@@ -751,6 +798,7 @@ p {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.03em;
+  white-space: nowrap;
 }
 .checkbox-form__icon {
   display: inline-block;
@@ -966,7 +1014,7 @@ section.description {
 }
 .team-photo {
   display: block;
-  max-width: 270px;
+  max-width: 100%;
   height: auto;
   text-align: center;
 }
@@ -1332,8 +1380,6 @@ section.description {
 
 .menu-list__portfolio {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
@@ -1343,10 +1389,14 @@ section.description {
 .menu-list__item {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .menu-list__item {
+    width: calc(50% - 15px);
+  }
+}
 @media screen and (min-width: 1200px) {
   .menu-list__item {
-    max-width: 370px;
-    width: auto;
+    width: calc(33.3333333333% - 20px);
   }
 }
 .menu-list__item div:last-of-type {
@@ -1373,6 +1423,7 @@ section.description {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 .product__description {
   top: 0;

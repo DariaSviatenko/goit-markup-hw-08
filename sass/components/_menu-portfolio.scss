@@ -1,5 +1,4 @@
 .menu-portfolio {
-  // @include centeredFlex(flex);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -15,7 +14,6 @@
   }
   &__item {
     list-style: none;
-    // flex-direction: column;
     margin-bottom: 7px;
   }
 }
