@@ -25,7 +25,9 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     transition: $transition-box-shadow;
 
@@ -79,6 +81,10 @@
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     z-index: -1;
+  }
+
+  &__name {
+    flex-grow: 1;
   }
 
   &__title {

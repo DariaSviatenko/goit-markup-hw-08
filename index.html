@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-06</title>
+    <title>goit-markup-hw-08</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -267,42 +267,57 @@
             <ul class="subtitle-list">
               <li class="subtitle-list__item">
                 <p class="occupation-label">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
-                <img
-                  class="occupation-photo"
-                  srcset="
-                    ./images/development.jpg    1x,
-                    ./images/development@2x.jpg 2x
-                  "
-                  src="./images/development.jpg"
-                  width="370"
-                  height="294"
-                  alt="Разработка"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/development.jpg    1x,
+                      ./images/development@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="occupation-photo"
+                    src="./images/development.jpg"
+                    width="370"
+                    height="294"
+                    alt="Разработка"
+                  />
+                </picture>
               </li>
               <li class="subtitle-list__item">
                 <p class="occupation-label">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
-                <img
-                  class="occupation-photo"
-                  srcset="
-                    ./images/formatting.jpg    1x,
-                    ./images/formatting@2x.jpg 2x
-                  "
-                  src="./images/formatting.jpg"
-                  width="370"
-                  height="294"
-                  alt="Форматирование"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/formatting.jpg    1x,
+                      ./images/formatting@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="occupation-photo"
+                    src="./images/formatting.jpg"
+                    width="370"
+                    height="294"
+                    alt="Форматирование"
+                  />
+                </picture>
               </li>
               <li class="subtitle-list__item">
                 <p class="occupation-label">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
-                <img
-                  class="occupation-photo"
-                  srcset="./images/design.jpg 1x, ./images/design@2x.jpg 2x"
-                  src="./images/design.jpg"
-                  width="370"
-                  height="294"
-                  alt="Дизайн"
-                />
+                <picture>
+                  <source
+                    srcset="./images/design.jpg 1x, ./images/design@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="occupation-photo"
+                    src="./images/design.jpg"
+                    width="370"
+                    height="294"
+                    alt="Дизайн"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
@@ -313,12 +328,24 @@
           <h2 class="subtitle">Наша команда</h2>
           <ul class="subtitle-list">
             <li class="subtitle-list-item">
-              <img
-                class="team-photo"
-                srcset="./images/teamcard1.jpg 1x, ./images/teamcard1@2x.jpg 2x"
-                src="./images/teamcard1.jpg"
-                alt="Product Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teamcard1.jpg    1x,
+                    ./images/teamcard1@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/teamcard1.jpg"
+                  alt="Product Designer"
+                  srcset="
+                    ./images/teamcard1.jpg    1x,
+                    ./images/teamcard1@2x.jpg 2x
+                  "
+                />
+              </picture>
               <h3 class="team-name">Игорь Демьяненко</h3>
               <p class="team-function">Product Designer</p>
               <ul class="social-network">
@@ -353,12 +380,20 @@
               </ul>
             </li>
             <li class="subtitle-list-item">
-              <img
-                class="team-photo"
-                srcset="./images/teamcard2.jpg 1x, ./images/teamcard2@2x.jpg 2x"
-                src="./images/teamcard2.jpg"
-                alt="Frontend Developer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teamcard2.jpg    1x,
+                    ./images/teamcard2@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/teamcard2.jpg"
+                  alt="Frontend Developer"
+                />
+              </picture>
               <h3 class="team-name">Ольга Репина</h3>
               <p class="team-function">Frontend Developer</p>
               <ul class="social-network">
@@ -393,12 +428,20 @@
               </ul>
             </li>
             <li class="subtitle-list-item">
-              <img
-                class="team-photo"
-                srcset="./images/teamcard3.jpg 1x, ./images/teamcard3@2x.jpg 2x"
-                src="./images/teamcard3.jpg"
-                alt="Marketing"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teamcard3.jpg    1x,
+                    ./images/teamcard3@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/teamcard3.jpg"
+                  alt="Marketing"
+                />
+              </picture>
               <h3 class="team-name">Николай Тарасов</h3>
               <p class="team-function">Marketing</p>
               <ul class="social-network">
@@ -433,12 +476,20 @@
               </ul>
             </li>
             <li class="subtitle-list-item">
-              <img
-                class="team-photo"
-                srcset="./images/teamcard4.jpg 1x, ./images/teamcard4@2x.jpg 2x"
-                src="./images/teamcard4.jpg"
-                alt="UI Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teamcard4.jpg    1x,
+                    ./images/teamcard4@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/teamcard4.jpg"
+                  alt="UI Designer"
+                />
+              </picture>
               <h3 class="team-name">Михаил Ермаков</h3>
               <p class="team-function">UI Designer</p>
               <ul class="social-network">
