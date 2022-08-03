@@ -616,7 +616,7 @@ p {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heroimage.jpg);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroimage.jpg);
   }
 }
 
