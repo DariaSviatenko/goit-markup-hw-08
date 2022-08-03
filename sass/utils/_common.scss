@@ -35,7 +35,8 @@ ul {
 }
 
 .section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: $desktop) {
     padding: 94px 0;
   }
